@@ -12,7 +12,7 @@ app.get('*', (req, res) => {
 });
 
 var port = process.env.PORT || '8000';
-//app.set('port', port);
+app.set('port', port);
 
 const server = http.createServer(app);
 //server.listen(port, () => console.log('Running'));
